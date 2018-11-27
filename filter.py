@@ -77,6 +77,7 @@ mask_ops = Mask_ops()
 main = Main()
 
 main.instruct()
+count = 0
 
 while True:
 
@@ -98,6 +99,7 @@ while True:
 			x -= 20
 			w -= 60
 			y -= 40
+			h += 20
 
 	#measurements are extracted in order to position the mask			
 
@@ -123,8 +125,6 @@ while True:
 	cv2.imshow('Python Photobooth', image)
 
 	k = cv2.waitKey(1)
-
-	count = 0
 
 	if k%256 == 32:
 
